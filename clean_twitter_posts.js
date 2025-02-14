@@ -1,7 +1,7 @@
 //
 // On the Profile page, paste into console to remove tweets and reposts.
 //
-function deleteAndUnretweet() {
+function deleteAndUnretweetPosts() {
     // Click the "More" button
     let moreButton = document.querySelector('[data-testid="caret"]');
     if (moreButton) {
@@ -39,12 +39,13 @@ function deleteAndUnretweet() {
             }
 
             // Wait before looping to the next item
-            setTimeout(deleteAndUnretweet, 2000);
+            setTimeout(deleteAndUnretweetPosts, 500);
         }, 500);
     } else {
         console.log("No more items to delete or unretweet.");
     }
 }
 
-// Start the loop
-deleteAndUnretweet();
+// Start the loop on Posts
+deleteAndUnretweetPosts();
+
