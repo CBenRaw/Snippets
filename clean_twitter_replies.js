@@ -37,7 +37,7 @@ async function deleteReplies() {
 
         console.log("Loop completed. Scrolling down for more posts...");
         window.scrollTo(0, document.body.scrollHeight);
-        await new Promise(resolve => setTimeout(resolve, 3000)); // Wait for new posts to load
+        await new Promise(resolve => setTimeout(resolve, 500)); // Wait for new posts to load
     }
 }
 
